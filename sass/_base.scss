@@ -22,6 +22,7 @@ $bp-largest: 75em; // 1200px;
 $bp-large: 68.75em; // 1100px;
 $bp-medium: 56.25em; // 900px;
 $bp-small:  37.5em; //600px;
+$bp-smallest:  31.25em; //500px;
 
 * {
   margin: 0;
@@ -34,6 +35,9 @@ html {
 
   @media only screen and (max-width: $bp-large) {
     font-size: 50%; // 1rem = 8px; 8/16 = 50%;
+  }
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 37.5%; // 1rem = 6px; 6/16 = 37.5%;
   }
 }
 
@@ -53,5 +57,5 @@ body {
   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  // min-height: 100vh;
 }
